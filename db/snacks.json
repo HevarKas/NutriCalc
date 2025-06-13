@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Almonds (10 pcs)",
+    "gram": 14,
+    "calories": 97,
+    "protein": 3.5,
+    "carbs": 3.3,
+    "fat": 8.5,
+    "sugar": 0.7,
+    "fiber": 1.7,
+    "suitableFor": ["all", "sugar", "cholesterol"],
+    "vitamins": ["E", "B2"]
+  },
+  {
+    "name": "Low-Fat Yogurt (100g)",
+    "gram": 100,
+    "calories": 63,
+    "protein": 5,
+    "carbs": 7,
+    "fat": 1.5,
+    "sugar": 5,
+    "fiber": 0,
+    "suitableFor": ["all", "cholesterol", "kidney"],
+    "vitamins": ["B12", "B2"]
+  },
+  {
+    "name": "Carrot Sticks",
+    "gram": 100,
+    "calories": 41,
+    "protein": 1,
+    "carbs": 10,
+    "fat": 0.2,
+    "sugar": 4.7,
+    "fiber": 2.8,
+    "suitableFor": ["all", "sugar", "cholesterol", "kidney"],
+    "vitamins": ["A", "K", "B6"]
+  },
+  {
+    "name": "Cucumber Slices",
+    "gram": 100,
+    "calories": 16,
+    "protein": 0.7,
+    "carbs": 3.6,
+    "fat": 0.1,
+    "sugar": 1.7,
+    "fiber": 0.5,
+    "suitableFor": ["all", "sugar", "cholesterol", "kidney"],
+    "vitamins": ["K", "B5"]
+  },
+  {
+    "name": "Boiled Egg (1 pc)",
+    "gram": 50,
+    "calories": 78,
+    "protein": 6,
+    "carbs": 0.6,
+    "fat": 5.3,
+    "sugar": 0.6,
+    "fiber": 0,
+    "suitableFor": ["all", "cholesterol", "kidney"],
+    "vitamins": ["A", "B2", "B12", "D"]
+  },
+  {
+    "name": "Banana (1 small)",
+    "gram": 100,
+    "calories": 89,
+    "protein": 1.1,
+    "carbs": 23,
+    "fat": 0.3,
+    "sugar": 12,
+    "fiber": 2.6,
+    "suitableFor": ["all", "cholesterol"],
+    "vitamins": ["B6", "C"]
+  },
+  {
+    "name": "Rice Cake with Peanut Butter",
+    "gram": 30,
+    "calories": 130,
+    "protein": 4,
+    "carbs": 15,
+    "fat": 7,
+    "sugar": 2,
+    "fiber": 1.5,
+    "suitableFor": ["all", "cholesterol"],
+    "vitamins": ["B3", "B6"]
+  },
+  {
+    "name": "Hummus with Veggie Sticks",
+    "gram": 100,
+    "calories": 166,
+    "protein": 5,
+    "carbs": 14,
+    "fat": 10,
+    "sugar": 1,
+    "fiber": 4,
+    "suitableFor": ["all", "cholesterol"],
+    "vitamins": ["B6", "E"]
+  },
+  {
+    "name": "Air-Popped Popcorn (no butter)",
+    "gram": 30,
+    "calories": 114,
+    "protein": 3.6,
+    "carbs": 22,
+    "fat": 1.2,
+    "sugar": 0.2,
+    "fiber": 3.5,
+    "suitableFor": ["all", "cholesterol"],
+    "vitamins": ["B1", "B3"]
+  },
+  {
+    "name": "Baked Apple Slices with Cinnamon",
+    "gram": 120,
+    "calories": 65,
+    "protein": 0.3,
+    "carbs": 17,
+    "fat": 0.2,
+    "sugar": 15,
+    "fiber": 2.2,
+    "suitableFor": ["all", "cholesterol"],
+    "vitamins": ["C", "B6"]
+  }
+]

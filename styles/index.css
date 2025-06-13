@@ -1,0 +1,246 @@
+/* ===== Global Reset & Base Styles ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #4caf50;
+  --color-primary-dark: #388e3c;
+  --color-background: #e8f5e9;
+  --color-card-bg: #f6faf7;
+  --color-white: #ffffff;
+  --color-text-dark: #333333;
+  --color-text-medium: #777777;
+  --color-accent: #4caf50;
+  --border-radius-lg: 34px;
+  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition-base: all 0.3s ease;
+}
+
+/* ===== Typography & Layout ===== */
+body {
+  font-family: "Inter", "Segoe UI", -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  font-size: 1rem; /* 16px base */
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 0; /* 20px */
+}
+
+/* ===== Main Container ===== */
+.nutrition-calculator {
+  width: 90%;
+  max-width: 50rem; /* 800px */
+  background-color: var(--color-card-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem; /* 40px */
+  margin: 0 auto;
+}
+
+/* ===== Header Section ===== */
+.nutrition-calculator__header {
+  text-align: center;
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.nutrition-calculator__title {
+  font-size: 2.5rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.nutrition-calculator__subtitle {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* ===== Content Sections ===== */
+.nutrition-calculator__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+}
+
+.nutrition-calculator__section {
+  width: 100%;
+  max-width: 50rem; /* 800px */
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.875rem; /* 30px */
+}
+
+.nutrition-calculator__section--flex {
+  display: flex;
+  gap: 2.5rem; /* 40px */
+}
+
+.nutrition-calculator__icon {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
+  flex-shrink: 0;
+}
+
+.nutrition-calculator__text-content {
+  flex: 1;
+}
+
+.nutrition-calculator__section-title {
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.nutrition-calculator__description {
+  font-size: 1rem;
+  color: var(--color-text-medium);
+  line-height: 1.7;
+}
+
+/* ===== Benefits List ===== */
+.nutrition-calculator__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nutrition-calculator__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem; /* 12px */
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.nutrition-calculator__list-icon {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  margin-top: 0.25rem; /* 4px */
+}
+
+/* ===== How It Works Section ===== */
+.nutrition-calculator__steps-container {
+  display: flex;
+  gap: 1.25rem; /* 20px */
+  justify-content: space-between;
+}
+
+.nutrition-calculator__step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem; /* 20px */
+}
+
+.nutrition-calculator__step-icon {
+  width: 1.875rem; /* 30px */
+  height: 1.875rem; /* 30px */
+}
+
+/* ===== CTA Section ===== */
+.nutrition-calculator__cta {
+  width: 100%;
+  max-width: 50rem; /* 800px */
+  text-align: center;
+  padding: 1.875rem; /* 30px */
+}
+
+.nutrition-calculator__cta-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+  border-radius: var(--border-radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+  text-decoration: none;
+  text-align: center;
+}
+
+.nutrition-calculator__cta-button:hover,
+.nutrition-calculator__cta-button:focus {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media screen and (min-width: 48em) {
+  /* 768px */
+  .nutrition-calculator__content {
+    gap: 1.875rem; /* 30px */
+  }
+
+  .nutrition-calculator__section-title {
+    font-size: 1.8rem;
+  }
+
+  .nutrition-calculator__description {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /* 1024px */
+  .nutrition-calculator {
+    padding: 3.75rem; /* 60px */
+  }
+
+  .nutrition-calculator__title {
+    font-size: 3rem;
+  }
+
+  .nutrition-calculator__subtitle {
+    font-size: 1.4rem;
+  }
+
+  .nutrition-calculator__section-title {
+    font-size: 2rem;
+  }
+
+  .nutrition-calculator__description {
+    font-size: 1.2rem;
+  }
+
+  .nutrition-calculator__steps-container {
+    gap: 2.5rem; /* 40px */
+  }
+
+  .nutrition-calculator__cta-button {
+    font-size: 1.1rem;
+    padding: 0.875rem 1.75rem; /* 14px 28px */
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* 600px */
+  .nutrition-calculator__section--flex {
+    flex-direction: column;
+    gap: 1.25rem; /* 20px */
+  }
+
+  .nutrition-calculator__steps-container {
+    flex-direction: column;
+  }
+}

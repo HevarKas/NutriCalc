@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriCalc – Eat Smart, Skip Supplements</title>
+    <meta
+      name="description"
+      content="NutriCalc is a free web app that calculates your daily nutritional needs and shows you what to eat using real food – no supplements required."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/nutricalc-favicon.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="../styles/naturicalc.css" />
+  </head>
+  <body>
+    <main class="nutrition-calculator">
+      <header class="calculator-header">
+        <h1><a href="index.html">NutriCalc</a></h1>
+        <p>Eat Smart, Skip Supplements</p>
+      </header>
+
+      <button class="back-button hidden" id="back-button">
+        <span>Back</span>
+      </button>
+      <section id="user-input">
+        <h2 class="section-title">User Information</h2>
+        <div id="form-error" class="form-error hidden"></div>
+        <form id="nutrition-form" class="nutrition-form">
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="activity">Activity Level</label>
+            <select id="activity" class="form-control">
+              <option value="low">Low</option>
+              <option value="moderate">Moderate</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="goal">Goal</label>
+            <select id="goal" class="form-control">
+              <option value="lose">Lose Weight</option>
+              <option value="maintain">Maintain</option>
+              <option value="gain">Gain Muscle</option>
+            </select>
+          </div>
+
+          <button type="submit" class="calculate-btn">Generate Plan</button>
+        </form>
+      </section>
+
+      <section id="daily-needs" class="results-section hidden">
+        <h2 class="section-title">Daily Nutritional Range</h2>
+        <div id="needs-output" class="macros-grid"></div>
+      </section>
+
+      <section id="food-plan" class="results-section hidden">
+        <h2 class="section-title">Suggested Daily Meal Plan</h2>
+        <div id="food-output" class="meal-plan"></div>
+      </section>
+    </main>
+
+    <script src="../scripts/nutricalc.js" defer></script>
+  </body>
+</html>
