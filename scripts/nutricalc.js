@@ -161,6 +161,8 @@ class NutritionCalculator {
     const resultContainer = document.getElementById("needs-output");
     const dailyNeedsContainer = document.getElementById("daily-needs");
 
+    document.getElementById("user-input").classList.add("hidden");
+    backButton.classList.remove("hidden");
     dailyNeedsContainer.classList.remove("hidden");
 
     resultContainer.innerHTML = `
@@ -258,9 +260,7 @@ class NutritionCalculator {
     const outputContainer = document.getElementById("food-plan");
     const backButton = document.getElementById("back-button");
 
-    backButton.classList.remove("hidden");
     outputContainer.classList.remove("hidden");
-    document.getElementById("user-input").classList.add("hidden");
 
     outputDiv.innerHTML = "<h2>🍽️ Personalized Daily Meal Plan</h2>";
 
