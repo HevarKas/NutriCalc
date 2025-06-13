@@ -228,7 +228,7 @@ class NutritionCalculator {
 
     await Promise.all(
       categories.map(async (category) => {
-        const response = await fetch(`../db/${category}.json`);
+        const response = await fetch(`./db/${category}.json`);
         if (!response.ok) throw new Error(`Failed to load ${category} data`);
         foodData[category] = await response.json();
       })
